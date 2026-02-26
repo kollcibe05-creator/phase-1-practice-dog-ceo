@@ -9,7 +9,6 @@ const select = document.getElementById("breed-dropdown")
 const dogBreeds = document.getElementById("dog-breeds")
 const form = document.getElementById("form")
 const searchInput = form.querySelector('input[id="search"]')
-console.log(searchInput)
 
 fetch (imgUrl)
 .then ( (r) => {
@@ -116,10 +115,12 @@ function initListeners () {
     select.addEventListener("change", (e) => {
         currentFilter = e.target.value
         applyFilters()
+        currentFilter = ''
     })
     searchInput.addEventListener("input", (e) => {
         currentSearch = e.target.value
         applyFilters()
+        currentSearch = ''
     })
     form.addEventListener("submit", (e) => e.preventDefault())
 }
