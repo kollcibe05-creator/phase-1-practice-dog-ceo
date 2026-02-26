@@ -1,0 +1,18 @@
+
+
+.sub {
+    position: inherit;
+    list-style-type: none;
+    background-color: grey;
+    margin-left: 7rem;
+}
+
+#dog-breeds {
+    background-color: black;
+    color: white;
+    list-style-type: none;
+}
+
+.breed {
+    border-right: medium solid white;
+}
